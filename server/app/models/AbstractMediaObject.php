@@ -23,4 +23,10 @@ abstract class AbstractMediaObject extends Eloquent {
             // Warn the user that the shelf they are trying to move to doesn't exist
         } // don't do anything else if there is an error
     }
+
+    /**
+     * Gets the reference code for this media object.
+     * @return string the reference code
+     */
+    public abstract function getReferenceCode();
 }
